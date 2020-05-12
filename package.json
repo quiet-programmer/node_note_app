@@ -1,0 +1,19 @@
+{
+  "name": "note_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quiet-programmer/node_note_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quiet-programmer/node_note_app/issues"
+  },
+  "homepage": "https://github.com/quiet-programmer/node_note_app#readme"
+}
