@@ -3,7 +3,7 @@
 <p>Simple Node Js application, which stores the note data in another file. made used of the CRUD pattern but using the terminal to work around with Creating a note, Reading a note, Updating a Note and Deleting a Note, all from the terminal.</p>
 
 <h2><b>Dependencies Used</b></h2>
-1. Chalk
+1. Chalk <br>
 2. Yargs
 
 <h2><b>How to Use</b></h2>
