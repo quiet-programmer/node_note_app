@@ -16,5 +16,5 @@ To List Notes -> node app.js list (press enter)
 
 To Read Notes -> node app.js read --title="title you want to read"
 
-<h2><b>Request</b><h2>
+<h2><b>Request</b></h2>
 Any help would be apppreciated, as I'm currently learning Node JS
