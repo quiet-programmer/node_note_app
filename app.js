@@ -26,9 +26,7 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: function (argv) {
-        notesFunctions.addNote(argv.title, argv.body)
-    }
+    handler: (argv) => notesFunctions.addNote(argv.title, argv.body)
 })
 
 //Create Remove command
@@ -42,9 +40,7 @@ yargs.command({
             type: 'string'
         },
     },
-    handler: function (argv) {
-        notesFunctions.removeNote(argv.title)
-    }
+    handler: (argv) => notesFunctions.removeNote(argv.title)
 })
 
 //Create Read command
