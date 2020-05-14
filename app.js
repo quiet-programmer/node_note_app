@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const yargs = require('yargs')
 
 //personal required files
-const notes = require('./notes')
+const notesFunctions = require('./notes')
 
 //common functions
 const log = console.log
@@ -20,21 +20,14 @@ yargs.command({
             demandOption: true,
             type: 'string'
         },
-        price: {
-            describe: 'Note Price',
-            demandOption: true,
-            type: 'string'
-        },
         body: {
             describe: 'Note Body',
             demandOption: true,
             type: 'string'
         }
     },
-    handler: function(argv) {
-        log(`Title: ${argv.title}`)
-        log(`Price: ${argv.price}`)
-        log(`Body: ${argv.body}`)
+    handler: function (argv) {
+        notesFunctions.addNote(argv.title, argv.body)
     }
 })
 
@@ -42,8 +35,15 @@ yargs.command({
 yargs.command({
     command: 'remove',
     describe: 'Remove\'s a Note',
-    handler: function() {
-        log("Removing a Note...")
+    builder: {
+        title: {
+            describe: 'Note Title',
+            demandOption: true,
+            type: 'string'
+        },
+    },
+    handler: function (argv) {
+        notesFunctions.removeNote(argv.title)
     }
 })
 
@@ -51,7 +51,7 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Read\'s a Note',
-    handler: function() {
+    handler: function () {
         log("Reading Note...")
     }
 })
@@ -60,7 +60,7 @@ yargs.command({
 yargs.command({
     command: 'list',
     describe: 'List\'s all the Note\'s',
-    handler: function() {
+    handler: function () {
         log('Listing all Note\'s...')
     }
 })
