@@ -14,7 +14,7 @@ To Remove a Note -> node app.js remove --title="title you want to remove" (press
 
 To List Notes -> node app.js list (press enter)
 
-To Read Notes -> node app.js read --title="title you want to read"
+To Read Notes -> node app.js read --title="title you want to read" (press enter)
 
 <h2><b>Request</b></h2>
 Any help would be apppreciated, as I'm currently learning Node JS
